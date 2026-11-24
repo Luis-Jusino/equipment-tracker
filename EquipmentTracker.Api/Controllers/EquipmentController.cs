@@ -16,7 +16,7 @@ public class EquipmentController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Equipment>>> GetAll([FromQuery] EquipmentStatus? status)
     {
-        var items = await _repo.GetAllSync();
+        var items = await _repo.GetAllAsync();
         if (status is not null)
         {
             items = items.Where(e => e.Status == status).ToList();

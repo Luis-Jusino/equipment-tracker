@@ -9,7 +9,7 @@ public class InMemoryEquipmentRepository : IEquipmentRepository
 
     private int _nextId = 1;
 
-    public Task<List<Equipment>> GetAllSync()
+    public Task<List<Equipment>> GetAllAsync()
     {
         lock (_lock) return Task.FromResult(_items.ToList());
     }
