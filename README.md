@@ -1,6 +1,6 @@
-# Equipment Trcker API
+# Equipment Tracker API
 
-A RREST API for tracking equipment abd it maintenance status, built with ASP.NET Core 8 to practice C# and .NET
+A REST API for tracking equipment and it maintenance status, built with ASP.NET Core 8 to practice C# and .NET
 
 ## Tech Stack
 
